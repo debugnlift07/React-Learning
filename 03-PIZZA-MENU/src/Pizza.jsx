@@ -1,22 +1,22 @@
-import pizzas from "../src/data";
-
-function Pizza() {
+function Pizza(props) {
   return (
     <div className="pizza">
       <ul>
-        {pizzas.map((pizza, index) => (
-          <li
-            key={index}
-            className={`pizza ${pizza.soldOut ? "sold-out" : ""}`}
-          >
-            <img src={`/${pizza.photoName}`} alt={pizza.name} />
+        {
+          <li className={`pizza ${props.pizzaObj.soldOut ? "sold-out" : ""}`}>
+            <img
+              src={`/${props.pizzaObj.photoName}`}
+              alt={props.pizzaObj.name}
+            />
             <div>
-              <h3>{pizza.name}</h3>
-              <p>{pizza.ingredients}</p>
-              <span>{pizza.soldOut ? "❌ Sold Out" : "✅ Available"}</span>
+              <h3>{props.pizzaObj.name}</h3>
+              <p>{props.pizzaObj.ingredients}</p>
+              <span>
+                {props.pizzaObj.soldOut ? "❌ Sold Out" : "✅ Available"}
+              </span>
             </div>
           </li>
-        ))}
+        }
       </ul>
     </div>
   );

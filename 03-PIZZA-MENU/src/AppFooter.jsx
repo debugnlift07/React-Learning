@@ -12,11 +12,14 @@ function AppFooter() {
   return (
     <footer className="footer">
       <p>{formattedDate}</p>
-      <p>
-        {isOpen
-          ? "We're currently open 🍕 — come grab your slice!"
-          : "Sorry, we're closed now. See you tomorrow!"}
-      </p>
+      <div className="order">
+        <p>
+          {isOpen
+            ? "We're currently open 🍕 — come grab your slice!"
+            : "Sorry, we're closed now. See you tomorrow!"}
+        </p>
+      </div>
+      <button className="btn">Order</button>
     </footer>
   );
 }
