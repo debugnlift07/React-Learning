@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import DatePage from "./DatePage";
 
 const messages = [
   "Learn React ⚛️",
@@ -51,6 +52,10 @@ function App() {
             Next
           </button>
         </div>
+      </div>
+      <div>
+        {" "}
+        <DatePage />
       </div>
     </>
   );
