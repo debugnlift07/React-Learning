@@ -11,8 +11,9 @@ function Pizza(props) {
             <div>
               <h3>{props.pizzaObj.name}</h3>
               <p>{props.pizzaObj.ingredients}</p>
+              <p>{props.pizzaObj.price}</p>
               <span>
-                {props.pizzaObj.soldOut ? "❌ Sold Out" : "✅ Available"}
+                {props.pizzaObj.soldOut ? "❌ Sold Out" : "✅ Available "}
               </span>
             </div>
           </li>
