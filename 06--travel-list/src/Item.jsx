@@ -1,0 +1,14 @@
+function Item({ quantity, description, packed }) {
+  return (
+    <li>
+      <span style={packed ? { textDecoration: "line-through" } : {}}>
+        {quantity} {description}
+      </span>
+      <button>
+        <span style={{ color: "red" }}>X</span>
+      </button>
+    </li>
+  );
+}
+
+export default Item;
