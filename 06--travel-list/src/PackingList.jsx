@@ -1,16 +1,18 @@
-import initialItems from "../src/data";
 import Item from "../src/Item";
 
-function PackingList() {
+function PackingList({ items, onDeleteItem, onToggleItem }) {
   return (
     <div className="list">
       <ul>
-        {initialItems.map((initialItem) => (
+        {items.map((item) => (
           <Item
-            key={initialItem.id}
-            quantity={initialItem.quantity}
-            description={initialItem.description}
-            packed={initialItem.packed}
+            key={item.id}
+            id={item.id}
+            quantity={item.quantity}
+            description={item.description}
+            packed={item.packed}
+            onDeleteItem={onDeleteItem}
+            onToggleItem={onToggleItem}
           />
         ))}
       </ul>
