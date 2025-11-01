@@ -7,6 +7,7 @@ import { useState } from "react";
 
 function App() {
   const [items, setItems] = useState([]);
+
   const handleItems = (item) => {
     setItems((items) => [...items, item]);
   };
@@ -32,7 +33,7 @@ function App() {
         onDeleteItem={handleDeleteItem}
         onToggleItem={handleToggleItem}
       />
-      <Status />
+      <Status items={items} />
     </>
   );
 }
