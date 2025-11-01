@@ -20,7 +20,7 @@
 - 🌐 Live Projects:
   - [Student App](https://reacatstudentapp.s3.ap-south-1.amazonaws.com/index.html)
   - [Calender App](https://react-learning-projects.s3.ap-south-1.amazonaws.com/index.html)
-  - [Pizza-menu-app] (https://pizza-menu-app.s3.ap-south-1.amazonaws.com/index.html)
+  - [Pizzamenu app] https://pizza-menu-app.s3.ap-south-1.amazonaws.com/index.html)
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
